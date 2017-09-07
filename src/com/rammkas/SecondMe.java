@@ -11,6 +11,7 @@ public class SecondMe {
     public void printMe()
     {
         System.out.println("From class in other file in project package.");
+        System.out.println("Change is coming.");
         System.out.printf("Inner variable is: %d%n", variable_1);
     }
 }
