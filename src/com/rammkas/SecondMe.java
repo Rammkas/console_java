@@ -12,6 +12,7 @@ public class SecondMe {
     {
         System.out.println("From class in other file in project package.");
         System.out.println("Change is coming.");
+        System.out.println("We are in dev branch on githun in net.");
         System.out.printf("Inner variable is: %d%n", variable_1);
     }
 }
