@@ -9,8 +9,10 @@ public class Main {
 	// write your code here
         String readData;
         boolean exit = false;
+
         SecondMe smObj = new SecondMe(10);
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
         System.out.println("Привет");
         smObj.printMe();
         try {
@@ -20,6 +22,8 @@ public class Main {
                 if (readData.matches("[0-9]+")) {
                     System.out.print("Введенное число: ");
                     System.out.println(readData);
+                    smObj.changeMe(Integer.parseInt(readData));
+                    smObj.printMe();
                 }else
                     System.out.println("Нужно было ввести число!");
                 System.out.println("Выход? (Y'es / N'o)");
